@@ -1,14 +1,11 @@
 # Ignora entornos virtuales
 venv/
-env/
+#env/
 
 # Ignora archivos de Python compilados
 __pycache__/
 *.pyc
 
-# Archivos de configuración sensibles
-# *.env
-# .env
 
 # Archivos de sistema
 .DS_Store
