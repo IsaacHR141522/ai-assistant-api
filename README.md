@@ -45,11 +45,10 @@ cd <carpeta-del-proyecto>
 
 # Crea un entorno virtual (opcional)
 python -m venv venv
+
 # Activa el entorno virtual
-# En Linux/Mac
-source venv/bin/activate
 # En Windows
-venv\Scripts\activate
+.\venv\Scripts\Activate.ps1 (recomendado)
 
 # Instala dependencias
 pip install -r requirements.txt
