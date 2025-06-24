@@ -57,6 +57,36 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
+
+
+## Carga en GitHub Codespaces
+
+1. Abre el repositorio en GitHub y haz clic en el botón **"Code"** > **"Open with Codespaces"** > **"New codespace"**.
+2. Espera a que Codespaces configure el entorno automáticamente.
+3. Instala las dependencias (si no se instalan automáticamente):
+
+```bash
+
+# Instala dependencias
+pip install -r requirements.txt
+
+# Ejecuta el servidor FastAPI
+python -m uvicorn app.main:app --reload
+
+```
+
+En GitHub Codespaces, el servidor se ejecuta dentro de un contenedor remoto, así que no puedes acceder directamente a http://127.0.0.1:8000 desde tu navegador local. Debes usar el reenvío de puertos que ofrece Codespaces.
+
+1.- Cuando corres el servidor, Codespaces detecta que el puerto 8000 está en uso y te muestra un botón o enlace en la parte inferior o superior de VS Code (o en la interfaz web) para abrir el puerto en el navegador.
+2.- Haz clic en ese enlace (usualmente dice algo como “Open in Browser” o “Abrir en navegador”).
+3.- Se abrirá una URL similar a:
+
+https://<tu-usuario>-<id>-8000.app.github.dev/docs
+
+**¡Agrega /docs al final si no aparece automáticamente!**
+
+
+
 ---
 
 ## 🛠️ Variables de entorno
