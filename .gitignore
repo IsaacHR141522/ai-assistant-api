@@ -7,8 +7,8 @@ __pycache__/
 *.pyc
 
 # Archivos de configuración sensibles
-*.env
-.env
+# *.env
+# .env
 
 # Archivos de sistema
 .DS_Store
